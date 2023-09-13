@@ -1,0 +1,63 @@
+.cont1{
+  color: yellow;
+  font-size: 18px;
+  font-family: 'Oswald';
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+  font-weight: bold;
+  
+}
+.input-block{
+  border-radius: 18px;
+  background-color: #100b00;
+  border: 2px solid;
+  font-size: 14px;
+  border-color: #fff;
+}
+input{
+    background-color: #100b00;
+    border-color: #100b00;
+    border: none;
+    border-radius: none;
+    font-family: 'Oswald';
+}
+.icon{
+    color: rgb(160, 150, 150);
+    font-size: 14px;
+}
+.btn{
+    background-color: yellow;
+    border-radius: 19px;
+    font-family: 'Oswald';
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.cont3{
+    background-color: gray;
+    color: #fff;
+  }
+  
+.text{
+  font-family: 'Oswald';
+}
+.cont3 th{
+  font-size: 14px;
+  color: #fff;
+  background-color: gray;
+}
+.cont3 td{
+  background-color: rgb(29, 25, 25);
+  color: #fff;
+  font-family: 'Oswald';
+  text-align: center;
+  font-size: 14px;
+}
+
+::ng-deep .p-inputswitch .p-inputswitch-slider {
+  background: transparent !important;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  border-radius: 30px;
+  border: 1px solid;
+  height: 12px;
+}

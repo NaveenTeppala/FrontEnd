@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function greet(greeting) {
+            console.log("" + greeting + " " + this.name);
+        }
+        const person = {
+            name: "Naveen"
+        };
+        greet.call(person, 'hi');
+
+        function introduce() {
+            console.log("My name is " + this.name);
+        }
+        const obj1 = { name: "naveen" };
+        const obj2 = { name: "pavan" };
+
+        introduce.call(obj1);
+        introduce.call(obj2);
+
+
+        const obj3={
+            name:"sindhuja",
+            greet:function(){
+                console.log('Hello,'+this.name);
+            }
+        }
+        const anotherPerson={
+            name:"Hindhhu"
+        };
+
+        obj3.greet.call(anotherPerson);
+
+        function g(greet,age){
+            console.log(""+greet+" , My name is "+this.name+" and i am "+age+" years old");
+        }
+        g.apply(person,['Hello',23]);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+.brand-name{
+    font-family: 'Oswald';
+    font-weight: 600;
+    font-size: 18px;
+}
+.username{
+    color:white;
+    font-size:18px ;
+    font-family: 'Oswald';
+    font-weight: 600;
+    letter-spacing: 2px;
+}

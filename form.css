@@ -1,0 +1,28 @@
+label{
+  display: block;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  font-size: 30px;
+}
+legend{
+  text-align: center;
+}
+body{
+   background-color:rgb(133, 162, 162)
+}
+strong{
+    font-size: 40px;
+    
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+button{
+      margin-top: 10px;
+      margin-left: 500px;
+      padding-top: 10px;
+      padding-bottom:10px;
+}

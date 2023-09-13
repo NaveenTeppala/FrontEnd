@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="ThankYou.html" target="_blank">
+        <fieldset class="personal-details">
+            <legend><strong>Personal Details</strong></legend>
+            <label for="f-name">First-Name :<input type="text" id="f-name" required></label>
+            <label for="l-name">Last-Name :<input type="text" id="l-name" required></label>
+            <label for="address">Address :<input type="text" id="address"></label>
+            <label for="ph-no">Phone number :<input type="text"id="ph-no" required></label>
+            <h2>select your gender </h2>
+            <label><input type="radio" value="gender" name="gender" id="male" required> Male</label>
+            <label><input type="radio" value-="gender" name="gender" id="female" required> Female</label>
+            <label><input type="radio" value="gender" name="gender" id="other" required> Other</label>
+            <label>Date of birth <input type="date" name="dob" id="dob" required></label>
+        </fieldset>
+        <fieldset class="Registration">
+               <legend><strong>Registration</strong></legend>
+               <label for="email">E-mail<input type="email" id="email" required></label>
+               <label for="password">Password<input type="password" id="password" required></label>
+        </fieldset>
+        <fieldset>
+            <label>Upload your photo</label>
+            <input type="file">
+        </fieldset>
+        <button type="submit"><strong>Submit</strong></button>
+    </form>
+    
+</body>
+</html>

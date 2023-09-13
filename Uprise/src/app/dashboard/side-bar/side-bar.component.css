@@ -1,0 +1,20 @@
+.cont{
+    background-color:black;
+    height:100vh;
+    overflow: hidden;
+    color: white;
+}
+.button1 a{
+    color:white;
+   font-size: 14px;
+   line-height: 22px;
+   font-style: normal;
+   font-weight: 500;
+   font-family: 'Oswald';
+   text-decoration: none;
+}
+
+.button1:hover{
+    cursor: pointer;
+}
+

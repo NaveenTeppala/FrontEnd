@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Elements By Name</title>
+</head>
+<body>
+    <form>
+        <p>Welcome to the simple form</p>
+        <p>here is the simple gender form</p>
+        <p>it contains 3 genders male, female, other genders</p>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> female
+        <input type="radio" name="gender" value="other">Other
+        <button onclick="totalElements()" >total paras</button>
+    </form>
+    <script>
+          function totalElements(){
+            let a=document.getElementsByTagName("p");
+            alert("total paras:"+a.length);
+          }
+
+    </script>
+</body>
+</html>

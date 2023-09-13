@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listner</title>
+</head>
+<body>
+    <p>Example of event listner</p>
+    <p id="para"></p>
+    <button id="btn">click me</button>
+    <script>
+        document.getElementById("btn").addEventListener("click",func);
+        function func(){
+          document.getElementById("para").innerHTML="Hello world"+"<br> welcome to js";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple-cookie</title>
+</head>
+<body>
+    Name:<input type="text" id="name"><br>
+    Email:<input type="email" id="email"><br>
+    Course:<input type="text" id="course"><br>
+    <button type="submit" onclick="setCookies()">set cookie</button>
+    <button type="submit" onclick="getCookies()">get cookie</button>
+    <script>
+        function setCookies(){
+            var obj={};
+            obj.name=document.getElementById("name").value;
+            obj.email=document.getElementById("email").value;
+            obj.course=document.getElementById("course").value;
+            var jsonString=JSON.stringify(obj);
+            document.cookie=jsonString;
+        }
+        function getCookies(){
+           if(document.cookie.length!=0){
+            var obj=JSON.parse(document.cookie);
+             alert("Name="+obj.name+"Email="+obj.email+"course="+obj.course);
+           }
+           else{
+            alert("cookie not available");
+           }
+        }
+    </script>
+</body>
+</html>

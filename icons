@@ -1,0 +1,4 @@
+<div class="user-input" style="position: relative;">
+                                <i class="fa fa-user" style="color: brown; position: absolute;"></i>
+                                <input type="text" placeholder="Enter your name" class="input1">
+                            </div>

@@ -1,0 +1,131 @@
+.cont{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url('../../../assets/Background_img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.container-fluid {
+    max-width: 554px;
+    border-radius: 2px;
+    border: 0.6px solid rgba(240, 240, 240, 0.20);
+    background: rgba(51, 51, 51, 0.30);
+}
+
+.brand-name {
+    color: #FFF;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.log {
+    color: #DCF763;
+    text-align: center;
+    font-family: 'Oswald';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 22px;
+    /* 91.667% */
+    font-variant: all-small-caps;
+}
+
+label {
+    color: #FFF;
+    font-family: 'Oswald';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.18px;
+}
+
+.input-block {
+    color: rgba(255, 255, 255, 0.20);
+    font-family: 'Oswald';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    background: #0F0F0F;
+    border: 0.6px solid rgba(240, 240, 240, 0.30);
+    border-radius: 2px;
+}
+
+input{
+    color: #FFF;
+    background-color: #0F0F0F;
+    /* background-color: #fff; */
+    border: 0px ;
+
+}
+
+input:focus{
+    outline: 0px;
+}
+
+i {
+    font-size: 16px;
+    color: rgb(203, 203, 12);
+}
+
+
+
+.rem {
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Oswald';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 157.143% */
+    letter-spacing: 0.14px;
+}
+
+.btn {
+    height:42px;
+    width: 150px;
+    border-radius: 18px;
+    background: #906DD5;
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+.acc{
+    color: #FFF;
+    font-family: Oswald;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.16px;
+}
+.acc a{
+    color: #D7FD2C;
+font-family: Oswald;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.16px;
+text-decoration-line: underline;
+}
+a:hover{
+    cursor: pointer;
+}
+.rem a{
+    color: rgba(255, 255, 255, 0.85);
+    font-family: 'Oswald';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    /* 157.143% */
+    letter-spacing: 0.14px; 
+}

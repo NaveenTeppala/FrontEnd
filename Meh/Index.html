@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehandi-World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="alert alert-success alert-link d-flex justify-content-between fade show">
+        <span>This is a success alert <a href="#">Read me</a> for more.</span>
+        <button class="btn-close" type="button" data-bs-dismiss="alert"></button>
+    </div>
+    <div class="alert alert-info d-flex justify-content-between">
+        <span>This is info-alert</span>
+        <button class="btn-close" disabbled></button>
+    </div>
+    <button class="btn btn-primary">
+        <span class="spinner-border spinner-border-sm"></span>
+        <span>Loading...</span>
+    </button>
+    <button class="btn btn-success">
+        <span class="spinner-grow spinner-grow-sm"></span> Loading
+    </button>
+    <div class="btn-group">
+        <button class="btn btn-danger">Apple</button>
+        <button class="btn btn-success">Samsung</button>
+        <button class="btn btn-secondary">Sony</button>
+    </div>
+    <div class="btn-group dropdown">
+        <button class="btn btn-danger">Apple</button>
+        <button class="btn btn-success">Samsung</button>
+        <div class="btn-group">
+            <button class="btn btn-warning dropdowm-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                aria-haspopup="true" id="dropdownmenubutton">Sony</button>
+            <div class="dropdown-menu" aria-labelledby="dropdownmenubutton">
+                <a class="dropdown-item" href="#">Tablet</a>
+                <a class="dropdown-item" href="#">smart-phone</a>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#hi">Collapse me</button>
+    <div class="collapse" id="hi">
+        <h5>Hi! Hello Everyone</h5>
+    </div>
+    <div>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#hello">Hi</a>
+        <div class="collapse" id="hello">
+            <h3>hello</h3>
+        </div>
+    </div>
+    <ul class="nav navbar bg-success">
+        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Conatct</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Info</a></li>
+    </ul>
+    <ul class="nav nav-tabs">
+        <li class="nav-item"><a href="#" class="nav-link">hello</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">hi</a></li>
+    </ul>
+    <div class="mt-3 px-3">
+        <ul class="nav nav-tabs">
+
+            <li class="nav-item dropdown" data-bs-toggle="dropdown"><a href="#" class="nav-link">Comapny</a></li>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item">Imaginnovate</li>
+                <li class="dropdown-item">Infosys</li>
+                <li class="dropdown-item">Google</li>
+            </ul>
+            <li class="nav-item dropdown" data-bs-toggle="dropdown"><a class="nav-link" href="#">Jobs</a></li>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item">Backend-dev</li>
+                <li class="dropdown-item">Frontend-dev</li>
+            </ul>
+        </ul>
+    </div>
+    <ul class="nav nav-tabs">
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#comp">Company</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#info">Information</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane container " id="comp">Best comapny</div>
+        <div class="tab-pane container " id="info">Pedda Rushikonda</div>
+    </div>
+    <div class="container bg-success">
+    <form>
+        <div class="mb-3 mt-3 pt-3">
+            <label class="form-label" for="email">Email:</label>
+            <input class="form-control" type="email" id="email" placeholder="Enter Your email">
+        </div>
+        <div class="mb-3">
+             <label class="form-label" for="pswd">Password:</label>
+             <input class="form-control" id="pswd" placeholder="Enter Password" type="password">
+        </div>
+        <div class="mb-3">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox">Remember me 
+            </label>
+        </div>
+        <div class="mb-3">
+           <label for="comment" class="form-label">comments:</label>
+           <textarea rows="5" class="form-control" placeholder="comments" id="comments"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

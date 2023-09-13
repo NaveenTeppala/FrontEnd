@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+}
+.screen-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(pexels-photo-761543.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sign-container{
+    height: 820px;
+    width: 902px;
+    background: linear-gradient(0deg, rgba(51, 51, 51, 0.3), rgba(51, 51, 51, 0.3)),
+linear-gradient(0deg, rgba(240, 240, 240, 0.2), rgba(240, 240, 240, 0.2));
+border: 1px;
+border-radius: 2px;
+border: 0.6px solid #F0F0F033;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.pic-container{
+    height: 360px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+ #img1{
+
+    width: 100px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:10px;
+} 
+#heading{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+#profile{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+#line1{
+    width: 800px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:44px;
+    
+}
+#user{
+    width: 378px;
+    height: 77px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    position: relative;
+}
+#username{
+    display: flex;
+    flex-direction:column;
+}
+#user-input{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 46px;
+
+}
+#emid{
+    width: 378px;
+    height: 77px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+#email{
+    display: flex;
+    flex-direction: column;
+    height: 46px;
+}
+#email-input{
+    display: flex;
+    flex-direction: column;
+    height: 46px;
+}
+#line2{
+    width: 800px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+}
+#num{
+
+    width: 378px;
+    height: 77px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    position: relative;
+}
+#number-input{
+    display: flex;
+    flex-direction: column;
+    height: 46px;
+}
+#bran{
+
+    width: 378px;
+    height: 77px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+}
+#brand-input{
+    display: flex;
+    flex-direction: column;
+    height: 46px;
+}
+#line3{
+    width:800px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+}
+#pass{
+
+    width: 378px;
+    height: 77px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    position: relative;
+}
+#password-input{
+    display: flex;
+    flex-direction: column;
+    height: 46px;
+}
+#conf{
+
+    width: 378px;
+    height: 77px;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    position: relative;
+}
+
+#create-input{
+    display: flex;
+    flex-direction: column;
+    height: 46px;
+}
+#button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#acc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#tc{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#already{
+    font-family: 'Oswald';
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.01em;
+text-align: center;
+color: white;
+}
+#login{
+    color: #D7FD2C;
+}
+#u{
+    font-family: Oswald;
+font-size: 16px;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 0.16px;
+text-align: left;
+color: white;
+}
+#e{
+    font-family: Oswald;
+font-size: 16px;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 0.16px;
+text-align: left;
+color: white;
+}
+#m{
+    font-family: Oswald;
+font-size: 16px;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 0.16px;
+text-align: left;
+color: white;
+}
+#b{
+    font-family: Oswald;
+font-size: 16px;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 0.16px;
+text-align: left;
+color: white;
+}
+#p{
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    text-align: left;
+    color: white;  
+}
+#c{
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    text-align: left;
+    color: white;
+}
+#r{
+    width: 150px;
+    height: 42px;
+    border-radius: 23px;
+    background-color: #906DD5;
+    color: white;
+    font-family: 'Oswald';
+font-size: 14px;
+font-weight: 600;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: center;
+border: none;
+cursor: pointer;
+}
+
+#terms{
+    font-family:oswald;
+font-size: 16px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0.01em;
+text-align: left;
+color: white;
+
+
+}
+#pic{
+    width: 92px;
+    height: 22px;
+    font-family: Oswald;
+font-size: 16px;
+font-weight: 500;
+line-height: 22px;
+letter-spacing: 0.01em;
+text-align: center;
+color: white;
+}
+#cond1{
+    color:#D7FD2C ;
+}
+#cond2{
+    color: #D7FD2C;
+}
+#dev{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+#profile{
+    width: 120px;
+    height: 122px;
+    
+}
+#line4{
+    display: flex;
+    flex-direction:row;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    gap: 8px;
+}
+.check input[type="checkbox"]{
+    cursor: pointer;
+}
+#input-tc{
+    display: flex;
+    flex-direction: row;
+    
+}
+.input1{
+    position: relative;
+    color: white;
+    width: 300px;
+    height: 46px;
+    background: linear-gradient(0deg, #0F0F0F, #0F0F0F),
+linear-gradient(0deg, rgba(240, 240, 240, 0.3), rgba(240, 240, 240, 0.3));
+border: 0.6px solid #F0F0F04D;
+padding-left: 35px;
+
+}
+
+.input1:focus{
+    outline: 1px solid yellow;
+}
+
+.credentials{
+      height:300px;
+      display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+} 
+::placeholder{
+    font-family: 'Oswald';
+font-size: 16px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0.01em;
+
+}
+.icon{
+    position: absolute;
+    z-index: 1;
+    top: 48px;
+    left: 10px;
+    /* top: 50%; */
+    color:yellow; 
+    width: 20px;
+    height: 20px;
+    
+}
+
+

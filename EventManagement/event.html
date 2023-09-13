@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="event.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="screen-container">
+
+        <div class="head-container">
+            <div class="logo-name">
+                <div class="logo">
+                    <img src="uprise.png" class="image">
+                </div>
+                <div class="name">
+                    <span>UPRISE</span>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="avatar">
+                    <img src="woman.png" class="image">
+                </div>
+                <div class="avatar-name">
+                    <span>Lucy Martin</span>
+                </div>
+            </div>
+        </div>
+        <div class="body-container">
+            <div class="side">
+                <div class="management">
+                    <button><span class="group-1"><i class="fa fa-music icon"></i></span><span class="group-2">Songs Management</span></button>
+                </div>
+                <div class="management">
+                    <button><span class="group-1"><i class="fa fa-calendar icon"></i></span><span class="group-2">Event Management</span></button>
+                </div>
+                <div class="management" id="band">
+                    <button><span class="group1"><i class="fa fa-group icon"></i></span><span class="group2">Band
+                            Details</span></button>
+                </div>
+            </div>
+            <div class="main">
+                <div class="heading">
+                    <div class="left-container">
+                        <div class="body-event">
+                            <span class="tag1">Your Events</span>
+                        </div>
+                    </div>
+                    <div class="right-container">
+                        <div class="search">
+                            <i class="fa fa-search icon1"></i>
+                            <input type="search" placeholder="search events...">
+                        </div>
+                        <div class="event-button">
+                            <button>
+                                <div class="button1">
+                                    <div>
+                                        <img src="add-square.png" class="plus">
+                                    </div>
+                                    <div>
+                                        <span>Create Event</span>
+                                    </div>
+                                </div>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="event-table">
+                    <div class="table-heading" id="tab-h">
+                        <div>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="heading-thumbnail"><span>Thumbnail</span></div>
+                        <div class="heading-event"><span>Event Name</span></div>
+                        <div class="heading-brand"><span>Band Name</span></div>
+                        <div class="heading-location"><span>Location</span></div>
+                        <div class="heading-start"><span>Start Date</span></div>
+                        <div class="heading-end"><span>End Date</span></div>
+                        <div class="heading-time"><span>Time</span></div>
+                        <div class="heading-action"><span>Actions</span></div>
+                    </div>
+                    <div class="table-data">
+                        <div>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="data-image"><img src="york.png"></div>
+                        <div class="data-event"><span>This town talks tour</span></div>
+                        <div class="data-brand"><span>Super sonix</span></div>
+                        <div class="data-location"><span>New York</span></div>
+                        <div class="data-start"><span>Jan 10,2022</span></div>
+                        <div class="data-end"><span>Jan 13,2022</span></div>
+                        <div class="data-time"><span>09:00 PM - 12:00 PM</span></div>
+                        <div class="edit-icons">
+                            <div class="edit"><button><img src="edit.png"></button></div>
+                            <div class="delete"><button><img src="delete_forever.png"></button></div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="table-data">
+                        <div>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="data-image"><img src="times.png"></div>
+                        <div class="data-event"><span>Midsummer Splendour</span></div>
+                        <div class="data-brand"><span>Logans's Sun</span></div>
+                        <div class="data-location"><span>Times New Estates</span></div>
+                        <div class="data-start"><span>Dec 20,2021</span></div>
+                        <div class="data-end"><span>Dec 22,2021</span></div>
+                        <div class="data-time"><span>09:00 PM - 12:00 PM</span></div>
+                        <div class="edit-icons">
+                            <div class="edit"><button><img src="edit.png"></button></div>
+                            <div class="delete"><button><img src="delete_forever.png"></button></div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="table-data">
+                        <div>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="data-image"><img src="wendy.png"></div>
+                        <div class="data-event"><span>Music Dreamland</span></div>
+                        <div class="data-brand"><span>Klodike Kittens</span></div>
+                        <div class="data-location"><span>New Jersey</span></div>
+                        <div class="data-start"><span>Oct 10,2021</span></div>
+                        <div class="data-end"><span>Oct 15,2021</span></div>
+                        <div class="data-time"><span>09:00 PM - 12:00 PM</span></div>
+                        <div class="edit-icons">
+                            <div class="edit"><button><img src="edit.png"></button></div>
+                            <div class="delete"><button><img src="delete_forever.png"></button></div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="table-data">
+                        <div>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="data-image"><img src="monster.png"></div>
+                        <div class="data-event"><span>Fest Invasion</span></div>
+                        <div class="data-brand"><span>Monster Due</span></div>
+                        <div class="data-location"><span>Washington</span></div>
+                        <div class="data-start"><span>Aug 12,2021</span></div>
+                        <div class="data-end"><span>Aug 15,2021</span></div>
+                        <div class="data-time"><span>09:00 PM - 12:00 PM</span></div>
+                        <div class="edit-icons">
+                            <div class="edit"><button><img src="edit.png"></button></div>
+                            <div class="delete"><button><img src="delete_forever.png"></button></div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="table-data">
+                        <div>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="data-image"><img src="attica.png"></div>
+                        <div class="data-event"><span>Gala Jungle</span></div>
+                        <div class="data-brand"><span>Finches of Attica</span></div>
+                        <div class="data-location"><span>Philipines</span></div>
+                        <div class="data-start"><span>Jul 12,2021</span></div>
+                        <div class="data-end"><span>Jul 13,2021</span></div>
+                        <div class="data-time"><span>09:00 PM - 12:00 PM</span></div>
+                        <div class="edit-icons">
+                            <div class="edit"><button><img src="edit.png"></button></div>
+                            <div class="delete"><button><img src="delete_forever.png"></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-footer">
+                    <div class="footer-text">
+                        <span>Previous</span>
+                    </div>
+                    <div class="footer-number">
+                        <span>1</span>
+                    </div>
+                    <div class="footer-number">
+                        <span>2</span>
+                    </div>
+                    <div class="footer-number">
+                        <span><u>3</u></span>
+                    </div>
+                    <div class="footer-number">
+                        <span>...</span>
+                    </div>
+                    <div class="footer-number">
+                        <span>6</span>
+                    </div>
+                    <div class="footer-number">
+                        <span>Next</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

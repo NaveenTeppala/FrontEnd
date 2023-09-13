@@ -1,0 +1,8 @@
+Parent - child data sharing
+ 1 ->  create a variable in parent-component.ts with a message in it
+ 2 ->  create a custom tah in parent-component.html with a variable i.e <app-post></app-post>
+ 3 ->  inside that custom tag [fromParent]="parentMessage", Here "fromParent" is a variable name for data transfer and "parentMessage" is a variable created inside a parent-component.ts
+ 4 ->   use @Input inside child-component.ts to catch data from parent-component.html 
+ 5 ->   To use @Input, first import Input then create Input() with variablename(parent-component.html) type="" i.e input() fromParent:string=""
+ 6 ->   Now inside the child-component.html use any tag {{variable-nMame}} -> variable name should be same as parent-variable-name. <h1>{{fromParent}}</h1>
+ Hence RESULT WILL BE DISPLAYED.

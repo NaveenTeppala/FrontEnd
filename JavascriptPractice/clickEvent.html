@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click-event-basic</title>
+</head>
+<body>
+    <button onclick="clickEvent()" type="button">click me</button>
+    <button onmouseover="mouseHover()" type="button" >hover me</button>
+    <button onfocus="focusEvent()" id="input1">focus me</button>
+    <button onkeydown="keyDown()" id="input2">press down key</button>
+    <script>
+        function clickEvent(){
+            document.write("you clicked me");
+        }
+        function mouseHover(){
+            alert("you hoverd me");
+        }
+        function focusEvent(){
+            document.getElementById("input1").style.background="green";
+        }
+        function keyDown(){
+            alert("pressed down key")
+        }
+    </script>
+</body>
+</html>
