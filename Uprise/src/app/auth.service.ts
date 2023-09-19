@@ -13,7 +13,8 @@ export class AuthService {
   private logInUrl="http://50.19.24.41/api/auth/login";
   private registerUrl="http://50.19.24.41/api/auth/signup";
   private songsUrl="http://50.19.24.41/api/song/songs-list";
-  
+  private deleteUrl="http://50.19.24.41/api/song/";
+  private liveUrl="http://50.19.24.41/api/song/live";
   
   
 
@@ -46,6 +47,20 @@ export class AuthService {
                                   .set('currentPage',currentPage.toString())
                                   .set('perPage',perPage.toString());
       return this.http.get(this.songsUrl,{ params: parameters});
+    }
+    
+
+    liveSongs(songId:number,live:boolean){
+      const httpHeaders=new HttpHeaders({
+        "client-Id":"437920819fa89d19abe380073d28839c",
+        "client-Secret":"28649120bdf32812f433f428b15ab1a1"
+      });
+      return this.http.put(this.liveUrl,live,{headers:httpHeaders});
+    }
+
+    deleteSong(songId:number){
+      const url=`${this.deleteUrl}${songId}`;
+      return this.http.delete(url);
     }
   }
 

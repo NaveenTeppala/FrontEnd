@@ -10,3 +10,7 @@
 
 
 @import "primeicons/primeicons.css";
+
+:root{
+    --primary-color: #dcf763;
+}

@@ -7,14 +7,14 @@
             <i class="pi pi-search icon ms-1 me-1"></i>
             <input type="search" placeholder="Search songs..." class="m-1">
         </div>
-        <a class="btn ms-3">
-            <i class="pi pi-cloud-upload icon ms-1 me-2"></i>
+        <a class="btn ms-2 text-center">
+            <i class="pi pi-cloud-upload icon ms-1 me-1"></i>
             <span>Upload Song</span>
         </a>
 
     </div>
 </div>
-<div class="cont3">
+<div class="cont3 m-3">
     <p-table [value]="songs">
         <ng-template pTemplate="header">
             <tr>
@@ -36,22 +36,42 @@
                 <td class="text text-center">{{song.title}}</td>
                 <td class="text text-center">{{formatTime(song.duration)}}</td>
                 <td>
-                    <ul>
-                        <li *ngFor="let genre of song.genres">{{ genre.genre_name}}</li>
-                    </ul>
+                    <span *ngFor="let genre of song.genres">{{ genre.genre_name}}
+                    </span>
                 </td>
                 <td class="text text-center">{{song.country}},{{song.cityName}}</td>
-                <td class="text text-center">{{song.createdAt}}</td>
+                <td class="text text-center">{{song.createdAt | date: 'dd-MM-yyyy' }}</td>
                 <td class="text text-center">
-                   <p-inputSwitch [(ngModel)]="song.live"></p-inputSwitch>
+                    <p-inputSwitch [(ngModel)]="song.live" (click)="liveToggle(song.id,song.live)"></p-inputSwitch>
                 </td>
                 <td class="text text-center">
-                    <i class="pi pi-trash me-1"></i>
-                    <i class="pi pi-pencil ms-1"></i>
+
+                    <p-button (click)="showDialog(song.live)" styleClass="p-button-link"><i
+                            class="pi pi-trash me-1"></i></p-button>
+                    
+                    <p-dialog [(visible)]="visible" [closable]="false">
+                        <div class="d-flex flex-column ">
+                            
+                                <i class="pi pi-info-circle m-2"></i>
+                            
+                                <p>Are You Sure You Want to Delete This Song ?</p>
+                            
+                        </div>
+                        <p-footer class="d-flex justify-content-between">
+                            <button type="button" pButton label="Cancel"
+                                (click)="visible = false" class="ms-4"></button>
+                            <button type="button" pButton  label="Yes,delete"
+                                (click)="confirmDelete(song.id,song.live)" class="me-3" class="delete"></button>
+                        </p-footer>
+                    </p-dialog>
+                    <p-button styleClass="p-button-link"><i class="pi pi-pencil ms-1"></i></p-button>
                 </td>
             </tr>
 
         </ng-template>
     </p-table>
-
+    
+    <p-paginator (onPageChange)="onPageChange($event)" [first]="first" [rows]="rows" [totalRecords]="1" [rowsPerPageOptions]="[10, 50, 100]"></p-paginator>
+    
 </div>
+    

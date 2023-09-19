@@ -1,5 +1,5 @@
 .cont1{
-  color: yellow;
+  color: var(--primary-color);
   font-size: 18px;
   font-family: 'Oswald';
   letter-spacing: 0.5px;
@@ -26,13 +26,15 @@ input{
     font-size: 14px;
 }
 .btn{
-    background-color: yellow;
+    background-color: var(--primary-color);
     border-radius: 19px;
     font-family: 'Oswald';
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 0.5px;
+    font-weight: 600;
 }
+
 .cont3{
     background-color: gray;
     color: #fff;
@@ -59,5 +61,89 @@ input{
   transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
   border-radius: 30px;
   border: 1px solid;
-  height: 12px;
+  height: 18px;
+}
+
+::ng-deep p-button i{
+  color: #fff;
+  border: none;
+  text-decoration: none;
+}
+::ng-deep .p-dialog .p-dialog-footer{
+  background-color:rgb(40,40,40);
+}
+::ng-deep .p-dialog .p-dialog-header{
+  padding: 2px;
+  background-color: rgb(40, 40 , 40);
+}
+::ng-deep .p-dialog .p-dialog-content{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 22px;
+  font-family: 'Oswald';
+  font-weight: 600;
+  color: rgb(255,255,255);
+  background-color:rgb(40,40,40);
+
+}
+::ng-deep .p-dialog .pi-info-circle{
+  font-size: 50px;
+  color:var(--primary-color);
+}
+::ng-deep .p-paginator{
+  background: #000000;
+    color: #f0f0f0;
+    border: solid #e9ecef;
+    border-width: 0;
+    padding: 0.5rem 1rem;
+    /* border-radius: 3px; */
+}
+::ng-deep .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background: #202020;
+  border-color: #202020;
+  color: #f1ffff;
+  font-size: 12px;
+  font-family: 'Oswald';
+  border-radius: 5%;
+  /* box-sizing: border-box; */
+}
+::ng-deep .p-paginator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+::ng-deep .p-dropdown-label {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  flex: 1 1 auto;
+  width: 1%;
+  
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+
+
+::ng-deep .p-dropdown{
+  box-sizing: border-box;
+  background-color: #202020;
+  color: #f1ffff;
+  border: none;
+
+}
+
+::ng-deep .p-button {
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  padding: 0.75rem 1.25rem;
+  letter-spacing: 1px;
+  font-size: 14px;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  border-radius: 35px;
+  font-family: 'Oswald';
 }

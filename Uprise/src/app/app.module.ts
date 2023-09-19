@@ -22,6 +22,12 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptorInterceptor } from './auth-interceptor.interceptor';
 import { TableModule } from 'primeng/table';
 import { InputSwitchModule } from 'primeng/inputswitch';
+import { OverlayPanelModule }from 'primeng/overlaypanel';
+import { DialogModule} from 'primeng/dialog';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
+import { ToastModule } from 'primeng/toast';
+import { PaginatorModule } from 'primeng/paginator';
+
 // import { ToggleButton} from 'primeng/togglebutton';
 // import { ToggleButtonModule } from 'primeng/togglebutton';
 
@@ -50,6 +56,11 @@ import { InputSwitchModule } from 'primeng/inputswitch';
     BrowserAnimationsModule,
     TableModule,
     InputSwitchModule,
+    OverlayPanelModule,
+    DialogModule,
+    ConfirmDialogModule,
+    ToastModule,
+    PaginatorModule,
     // ToggleButton,
     // ToggleButtonModule,
     ToastrModule.forRoot()

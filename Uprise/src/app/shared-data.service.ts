@@ -9,7 +9,7 @@ export class SharedDataService {
 
   constructor() {}
   
-  setData(data :any){
+   setData(data :any){
     this.UserData=data;
   }
   getData(){
